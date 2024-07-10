@@ -10,17 +10,19 @@ def main():
     a=0
     while True:
         display_menu()
-        choice = input("Enter your choice: ")
+        choice = str(input("Enter your choice: "))
 
         if choice == '1':
             item=input("Enter the item to add:")
             shopping_list[a] = item
+            a=a+1
             pass
         elif choice == '2':
             # Prompt for and remove an item
             shopping_list
             Rm=input("what item do you want to remove?")
             shopping_list.remove(Rm)
+            a=a-1
             pass
         elif choice == '3':
             shopping_list
